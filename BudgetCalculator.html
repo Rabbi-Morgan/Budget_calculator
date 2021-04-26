@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="budget, income, expense, " />
+		<meta name="author" content="Omobolaji Anuoluwapo" />
+		<meta
+			name="description"
+			content="an online application that helps you make budget"
+		/>
+		<title>Budget Calculator</title>
+		<link rel="stylesheet" href="BudgetCalculator.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+			integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+	</head>
+	<body>
+		<div class="top">
+			<div class="BudgetHead">
+				<h2>Available Budget in September 2016:</h2>
+			</div>
+			<div class="counter">
+				<h1>+ 0.00</h1>
+			</div>
+			<div class="income display">
+				<h3 class="displayHead">income</h3>
+				<h3 class="displayCounter">+ 0.00</h3>
+			</div>
+			<div class="expense display">
+				<h3 class="displayHead">expences</h3>
+				<h3 class="displayCounter">
+					+ &nbsp; 0.00
+					<div class="percentage">-</div>
+				</h3>
+			</div>
+
+			<div class="inputSide">
+				<form action="">
+					<select name="" class="operation">
+						<option value="Add to your income" class="add--income" selected
+							>+</option
+						>
+						<option value="your expense" class="subtract--income">-</option>
+					</select>
+					<input
+						type="text"
+						class="add--description" id="words"
+						placeholder="Add description"
+					/>
+					<input type="number" placeholder="Value" id="amount" />
+					<button class="add--btn"type="submit"><i class="far fa-check-circle"></i></button>
+				</form>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<div class="income-side table">
+				<div class="tableHead"><h1>income</h1></div>
+				<div class="incomeElement">
+					<div class="incomeElemementTitle"><h3>Website Project</h3></div>
+					<div class="incomeElementamount"><h3>+ 2,500.00</h3></div>
+				</div>
+			</div>
+			<div class="expense-side table">
+				<div class="tableHead">
+					<h1>expenses<h1>
+				</div>
+				<div class="expenseElement">
+					<div class="expenseElemementTitle">
+						<h3>rent</h3>
+					</div>
+					<div class="expenseElementamount">
+						<h3>
+							- 900.00
+							<span class="elementPercentage">23%</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="BudgetCalculator.js"></script>
+	</body>
+</html>
